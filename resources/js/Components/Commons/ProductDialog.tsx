@@ -119,10 +119,6 @@ function DialogBodyRow({ }) {
         selected ? setBgColor(() => "bg-blue-200") : setBgColor(() => "bg-white");
     }, [selected]);
 
-    const changeBgColor = (color: string) => {
-        setBgColor((prev) => prev === "bg-white" ? "bg-blue-200" : "bg-white");
-    }
-
     return (
         <tr className="grid grid-flow-col grid-cols-4 gap-px bg-gray-400 w-full">
             <DialogDataCell
